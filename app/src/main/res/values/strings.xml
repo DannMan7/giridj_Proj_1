@@ -1,0 +1,38 @@
+<resources>
+    <!-- App Name String for launcher  -->
+    <string name="app_name">giridj_Proj_1</string>
+    <string name="title">Individual Project 1</string>
+    <!-- Names for login screen -->
+    <string name="login">Login:</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in!</string>
+    <string name="register">Register!</string>
+    <!-- End Names for login activity  -->
+    <!-- Names for register activity -->
+    <string name="fName">First Name:</string>
+    <string name="lName">Last Name:</string>
+    <string name="DOB">Date of Birth:</string>
+    <string name="eMail">Email Address:</string>
+    <string name="pass_w_colon">Password:</string>
+    <string name="day_hint">Day</string>
+    <string name="year_hint">Year</string>
+    <!-- String array for Mont Spinner -->
+    <string-array name="spinner_month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string name="reg_submit">SUBMIT!</string>
+    <!-- End Names for register activity -->
+    <string name="home_success">Login Successful!</string>
+</resources>

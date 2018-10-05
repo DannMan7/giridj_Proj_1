@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ScrollView added to allow form to fit on different screen sizes  -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".register">
+    <!-- Linear Layout used to center register form vertically and centering its children
+      horizontally -->
+    <LinearLayout
+        android:id="@+id/LLRegMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <!-- Inner Linear Layout that centers the children horizontally  -->
+        <LinearLayout
+            android:id="@+id/LLRegSub1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <!-- TextView for First Name  -->
+            <TextView
+                android:id="@+id/TVFName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fName" />
+            <!-- EditText for First Name input   -->
+            <EditText
+                android:id="@+id/ETFName"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!-- Inner Linear Layout that centers the children horizontally  -->
+        <LinearLayout
+            android:id="@+id/LLRegSub2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <!-- TextView for Last Name -->
+            <TextView
+                android:id="@+id/TVLName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lName"/>
+            <!-- EditText for Last Name input -->
+            <EditText
+                android:id="@+id/ETLName"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+        </LinearLayout>
+        <!-- Inner Linear Layout that centers the children horizontally -->
+        <LinearLayout
+            android:id="@+id/LLRegSub3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <!-- TextView for Date of Birth -->
+            <TextView
+                android:id="@+id/TVDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DOB"/>
+            <!-- Spinner for month -->
+            <!-- Allows user to select the month from a list -->
+            <Spinner
+                android:id="@+id/spinM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Spinner>
+            <!-- EditText for Day input -->
+            <EditText
+                android:id="@+id/ETDay"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/day_hint" />
+            <!-- EditText for Year input -->
+            <EditText
+                android:id="@+id/ETYear"
+                android:layout_width="80dp"
+                android:hint="@string/year_hint"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!-- Inner Linear Layout that centers the children horizontally -->
+        <LinearLayout
+            android:id="@+id/LLRegSub4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <!-- TextView for Email -->
+            <TextView
+                android:id="@+id/TVEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eMail" />
+            <!-- EditText for Email input -->
+            <EditText
+                android:id="@+id/ETLEmail"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+        </LinearLayout>
+        <!-- Linear Layout that centers the children horizontally -->
+        <LinearLayout
+            android:id="@+id/LLRegSub5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <!-- TextView for Password -->
+            <TextView
+                android:id="@+id/TVPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pass_w_colon"/>
+            <!-- EditText for Password input -->
+            <EditText
+                android:id="@+id/ETLPass"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!-- Button that allows user to submit their registration form once completed -->
+        <Button
+            android:id="@+id/register_submit"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/reg_submit" />
+    </LinearLayout>
+</ScrollView>

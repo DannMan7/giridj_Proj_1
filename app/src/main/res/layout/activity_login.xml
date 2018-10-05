@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+    <!-- Linear Layout used for centering Username and Password to snap to the top of
+      parent view.
+      Vertical bias is set to allow for landscape view on different devices -->
+    <LinearLayout
+        android:id="@+id/LLMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04">
+        <!-- Login TextView displays Login text  -->
+        <TextView
+            android:id="@+id/TV1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            android:text="@string/login"
+            android:textSize="24sp" />
+        <!-- EditText allows user to input their username  -->
+        <EditText
+            android:id="@+id/ET1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:textSize="24sp" />
+        <!-- EditText allows user to input their password  -->
+        <EditText
+            android:id="@+id/ET2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingTop="16dp"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <!-- Button is left justified to snap to the parent view
+      The top of the Button is adjusted to snap to the bottom of the LLMain layout
+      Button is used to allow the user to continue to the register activity -->
+    <Button
+        android:id="@+id/BTN1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/sign_in"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LLMain" />
+    <!-- Button is right justified to snap to the parent view
+      The top of the Button is adjusted to snap to the bottom of the LLMain layout
+      Button is used to allow the user to continue to the register activity -->
+    <Button
+        android:id="@+id/BTN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/register"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LLMain" />
+
+</android.support.constraint.ConstraintLayout>
